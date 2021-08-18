@@ -92,6 +92,7 @@ public class magicLeap {
                     //capabilities.setCapability("build", date +"  "+this.PlatformValue + System.getenv("LT_BUILD_NAME"));
                     capabilities.setCapability("build", formatter.format(date) + System.getProperty("BUILD_NAME"));
                     capabilities.setCapability("name", this.TestName);
+
                     //  capabilities.setCapability("resolution", "1280x800");
                     //capabilities.setCapability("lambda:userFiles", file);
                     capabilities.setCapability("console", true);
@@ -212,6 +213,7 @@ public class magicLeap {
             ResolutionTest ResolutionTestObject = new ResolutionTest();
             ResolutionTestObject.Resolution(driver, ResolutionValue, status, ResolutionTotal, this.ResolutionValueCap, session);
             GoogleSpace space = new GoogleSpace();
+
             space.GSpace(driver, session);
             TestCase SeleniumTest = new TestCase();
             SeleniumTest.LongCase(driver, session);
@@ -230,6 +232,9 @@ public class magicLeap {
             /*
             DesignPlane plane = new DesignPlane();
             plane.plane(driver,session);*/
+            for (int index  = 0; index<=100; index++) {
+                Thread.sleep(1000);
+            }
             SuiteStop = System.currentTimeMillis();
             SuiteTotalTime = SuiteStop - SuiteStart;
             System.out.println("Total Time Took for Test suite execute" + "   " + SuiteTotalTime / 1000f);
