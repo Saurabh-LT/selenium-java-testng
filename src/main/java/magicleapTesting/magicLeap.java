@@ -51,7 +51,6 @@ public class magicLeap {
     long SuiteTotalTime;
     Long AllVersions = null;
     Date date;
-    String randomString = Utils.generateRandomString(5);
 
 
     @org.testng.annotations.Parameters(value = {"browser", "version", "platform", "fixedIp", "resolution", "timezone", "geoLocation", "tunnel"})
@@ -93,7 +92,7 @@ public class magicLeap {
                     capabilities.setCapability("version", "latest" + "-" + j);
                     capabilities.setCapability("platform", this.PlatformValue);
                     //capabilities.setCapability("build", date +"  "+this.PlatformValue + System.getenv("LT_BUILD_NAME"));
-                    capabilities.setCapability("build", formatter.format(date) + System.getProperty("BUILD_NAME") + randomString);
+                    capabilities.setCapability("build", formatter.format(date) + System.getProperty("BUILD_NAME"));
                     capabilities.setCapability("name", this.TestName);
 
                     //  capabilities.setCapability("resolution", "1280x800");
