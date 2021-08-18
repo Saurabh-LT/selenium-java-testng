@@ -17,7 +17,7 @@ public class GeolocationTest {
             Geolocationstart = System.currentTimeMillis();
             driver.get("https://www.iplocation.net/find-ip-address");
             driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-            Thread.sleep(10000);
+            Thread.sleep(5000);
             WebElement ipLocation = driver.findElement(By.xpath("/html/body/div[1]/section/div/div/div[1]/div[5]/div[3]/div/table/tbody/tr[2]/td"));
             ipLocation.getAttribute("innerText");
            // System.out.println("Location of the machine" + "  " + ipLocation.getAttribute("innerText"));

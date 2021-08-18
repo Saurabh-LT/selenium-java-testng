@@ -48,8 +48,8 @@ public class LambdaTutrial {
             driver.setFileDetector(new LocalFileDetector());
             File file = new File("src/main/resources/5mb.jpg");
 
-            WebElement upload = driver.findElement(By.xpath("/html/body/div[1]/div[1]/section[2]/div/div/div[4]/div[3]/div/form/input"));
-            upload.sendKeys(file.getAbsolutePath());
+//            WebElement upload = driver.findElement(By.xpath("/html/body/div[1]/div[1]/section[2]/div/div/div[4]/div[3]/div/form/input"));
+//            upload.sendKeys(file.getAbsolutePath());
         } catch (Exception t) {
             System.out.println(t);
             System.out.println(t + "    " + " SessionID --->" + "  " + session);
