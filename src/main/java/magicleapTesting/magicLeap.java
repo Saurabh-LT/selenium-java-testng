@@ -232,9 +232,9 @@ public class magicLeap {
             /*
             DesignPlane plane = new DesignPlane();
             plane.plane(driver,session);*/
-            for (int index  = 0; index<=50; index++) {
-                Thread.sleep(1000);
-            }
+//            for (int index  = 0; index<=20; index++) {
+//                Thread.sleep(1000);
+//            }
             SuiteStop = System.currentTimeMillis();
             SuiteTotalTime = SuiteStop - SuiteStart;
             System.out.println("Total Time Took for Test suite execute" + "   " + SuiteTotalTime / 1000f);
