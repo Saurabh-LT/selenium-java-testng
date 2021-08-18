@@ -14,7 +14,6 @@
         <parameter name="tunnel" value="false"/>
         <classes>
             <class name="magicleapTesting.magicLeap"/>
-
         </classes>
     </test>
 
@@ -38,7 +37,7 @@
     <test name="3">
         <parameter name="browser" value="MicrosoftEdge"/>
         <parameter name="version" value="latest"/>
-        <parameter name="platform" value="win8"/>
+        <parameter name="platform" value="win8.1"/>
         <parameter name="fixedIp" value="10.5.0.34"/>
         <parameter name="resolution" value="1280x1024"/>
         <parameter name="timezone" value="UTC+04:00"/>
@@ -69,7 +68,7 @@
     <test name="5">
         <parameter name="browser" value="Chrome"/>
         <parameter name="version" value="11.0"/>
-        <parameter name="platform" value="win7"/>
+        <parameter name="platform" value="win8.1"/>
         <parameter name="fixedIp" value="10.82.6.201"/>
         <parameter name="resolution" value="1440x900"/>
         <parameter name="timezone" value="UTC+04:00"/>
@@ -85,7 +84,7 @@
     <test name="6">
         <parameter name="browser" value="Firefox"/>
         <parameter name="version" value="74.0"/>
-        <parameter name="platform" value="win7"/>
+        <parameter name="platform" value="win8.1"/>
         <parameter name="fixedIp" value="10.82.6.203"/>
         <parameter name="resolution" value="1440x900"/>
         <parameter name="timezone" value="UTC+04:00"/>
@@ -102,7 +101,7 @@
     <test name="7">
         <parameter name="browser" value="MicrosoftEdge"/>
         <parameter name="version" value="72.0"/>
-        <parameter name="platform" value="win7"/>
+        <parameter name="platform" value="win8.1"/>
         <parameter name="fixedIp" value="10.82.6.205"/>
         <parameter name="resolution" value="1280x1024"/>
         <parameter name="timezone" value="UTC+04:00"/>
@@ -118,7 +117,7 @@
     <test name="8">
         <parameter name="browser" value="Chrome"/>
         <parameter name="version" value="11.0"/>
-        <parameter name="platform" value="macos big sur"/>
+        <parameter name="platform" value="win8.1"/>
         <parameter name="fixedIp" value="10.243.32.235"/>
         <parameter name="resolution" value="1600x1200"/>
         <parameter name="timezone" value="UTC+04:00"/>
@@ -133,7 +132,7 @@
     <test name="9">
         <parameter name="browser" value="Firefox"/>
         <parameter name="version" value="71.0"/>
-        <parameter name="platform" value="macos big sur"/>
+        <parameter name="platform" value="win8.1"/>
         <parameter name="fixedIp" value="10.243.32.236"/>
         <parameter name="resolution" value="1440x900"/>
         <parameter name="timezone" value="UTC+04:00"/>
@@ -149,7 +148,7 @@
     <test name="10">
         <parameter name="browser" value="Chrome"/>
         <parameter name="version" value="65.0"/>
-        <parameter name="platform" value="macos big sur"/>
+        <parameter name="platform" value="win8.1"/>
         <parameter name="fixedIp" value="10.243.32.64"/>
         <parameter name="resolution" value="1600x1200"/>
         <parameter name="timezone" value="UTC+04:00"/>
