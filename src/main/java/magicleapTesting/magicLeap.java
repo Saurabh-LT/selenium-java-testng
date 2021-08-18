@@ -8,7 +8,9 @@ import org.openqa.selenium.remote.SessionId;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+import utills.Utils;
 
+import javax.rmi.CORBA.Util;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.text.DateFormat;
@@ -79,8 +81,8 @@ public class magicLeap {
         DateFormat formatter = new SimpleDateFormat("dd-MM-yyyy HH");
         formatter.setTimeZone(TimeZone.getTimeZone("Asia/Kolkata"));
         date = new Date();
-        for (int i = 0; i < 115; i++) {
-            for (int j = 0; j < 5; j++) {
+        for (int i = 0; i < 5; i++) {
+            for (int j = 0; j < 2; j++) {
                 try {
                     String[] file = {"5mb.jpg", "10MB1.jpg", "10MB2.jpg", "10MB3.jpg", "10MB4.jpg", "10MB5.jpg", "10MB6.jpg", "10MB7.jpg", "10MB8.jpg", "10MB9.jpg", "10MB10.jpg"};
                     String region = "us";
@@ -90,7 +92,7 @@ public class magicLeap {
                     capabilities.setCapability("version", "latest" + "-" + j);
                     capabilities.setCapability("platform", this.PlatformValue);
                     //capabilities.setCapability("build", date +"  "+this.PlatformValue + System.getenv("LT_BUILD_NAME"));
-                    capabilities.setCapability("build", formatter.format(date) + System.getProperty("BUILD_NAME"));
+                    capabilities.setCapability("build", formatter.format(date) + System.getProperty("BUILD_NAME") + Utils.generateRandomString(5));
                     capabilities.setCapability("name", this.TestName);
 
                     //  capabilities.setCapability("resolution", "1280x800");
