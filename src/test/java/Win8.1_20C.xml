@@ -162,7 +162,7 @@
     </test>
 
 
-    <test name="10">
+    <test name="11">
         <parameter name="browser" value="Chrome"/>
         <parameter name="version" value="65.0"/>
         <parameter name="platform" value="win8.1"/>
@@ -177,7 +177,7 @@
         </classes>
     </test>
 
-    <test name="11">
+    <test name="12">
         <parameter name="browser" value="safari"/>
         <parameter name="version" value="65.0"/>
         <parameter name="platform" value="win8.1"/>
@@ -193,7 +193,7 @@
     </test>
 
 
-    <test name="12">
+    <test name="13">
         <parameter name="browser" value="MicrosoftEdge"/>
         <parameter name="version" value="70.0"/>
         <parameter name="platform" value="win8.1"/>
@@ -208,7 +208,7 @@
         </classes>
     </test>
 
-    <test name="13">
+    <test name="14">
         <parameter name="browser" value="safari"/>
         <parameter name="version" value="78.0"/>
         <parameter name="platform" value="win8.1"/>
@@ -224,7 +224,7 @@
     </test>
 
 
-    <test name="14">
+    <test name="15">
         <parameter name="browser" value="firefox"/>
         <parameter name="version" value="latest-1"/>
         <parameter name="platform" value="win8.1"/>
@@ -240,7 +240,7 @@
         </classes>
     </test>
 
-    <test name="15">
+    <test name="16">
         <parameter name="browser" value="chrome"/>
         <parameter name="version" value="latest-15"/>
         <parameter name="platform" value="win8.1"/>
@@ -256,7 +256,7 @@
         </classes>
     </test>
 
-    <test name="16">
+    <test name="17">
         <parameter name="browser" value="MicrosoftEdge"/>
         <parameter name="version" value="90.0"/>
         <parameter name="platform" value="win8.1"/>
@@ -272,7 +272,7 @@
         </classes>
     </test>
 
-    <test name="17">
+    <test name="18">
         <parameter name="browser" value="Chrome"/>
         <parameter name="version" value="90.0"/>
         <parameter name="platform" value="win8.1"/>
@@ -288,7 +288,7 @@
         </classes>
     </test>
 
-    <test name="18">
+    <test name="19">
         <parameter name="browser" value="Firefox"/>
         <parameter name="version" value="74.0"/>
         <parameter name="platform" value="win8.1"/>
@@ -305,7 +305,7 @@
     </test>
 
 
-    <test name="19">
+    <test name="20">
         <parameter name="browser" value="IE"/>
         <parameter name="version" value="11.0"/>
         <parameter name="platform" value="win8.1"/>
@@ -320,19 +320,4 @@
         </classes>
     </test>
 
-
-    <test name="20">
-        <parameter name="browser" value="MicrosoftEdge"/>
-        <parameter name="version" value="90.0"/>
-        <parameter name="platform" value="win8.1"/>
-        <parameter name="fixedIp" value="10.80.102.100"/>
-        <parameter name="resolution" value="1280x1024"/>
-        <parameter name="timezone" value="UTC+04:00"/>
-        <parameter name="geoLocation" value="MA"/>
-        <parameter name="tunnelName" value="prateekSingh"/>
-        <parameter name="tunnel" value="false"/>
-        <classes>
-            <class name="magicleapTesting.magicLeap"/>
-        </classes>
-    </test>
 </suite>
