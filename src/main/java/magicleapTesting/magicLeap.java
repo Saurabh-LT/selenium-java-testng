@@ -18,8 +18,8 @@ import java.util.TimeZone;
 
 public class magicLeap {
 
-    public String username = "prateeks";
-    public String accesskey = "c5nvx3MGUzs8Lzv8NZVKbNiOeQaElnMtDp3nZEbwwhKc9NV8Qd";
+    public String username = System.getProperty("LT_USERNAME");
+    public String accesskey = System.getProperty("LT_ACCESS_KEY");
     public RemoteWebDriver driver;
     public String gridURL = "preprod-hub.lambdatest.com"; //hub-virginia.lambdatest.com/wd/hub"@eu-central-1-hub.lambdatest.com/wd/hub";https://dark-1-hub.lambdatest.com/wd/hub/status
     //https://dark-2-hub.lambdatest.com/wd/hub/status
@@ -66,12 +66,6 @@ public class magicLeap {
                 TestName = BrowserValue;
                 if (PlatformValue != null) {
                     TestName = BrowserValue + Space + PlatformValue;
-                    if (versionValue != null) {
-                        TestName = BrowserValue + Space + PlatformValue + Space + versionValue;
-                        if (FixedIpValue != null)
-                            TestName = BrowserValue + Space + PlatformValue + Space + versionValue + Space + FixedIpValue;
-
-                    }
                 }
             }
 
@@ -85,26 +79,37 @@ public class magicLeap {
         DateFormat formatter = new SimpleDateFormat("dd-MM-yyyy HH");
         formatter.setTimeZone(TimeZone.getTimeZone("Asia/Kolkata"));
         date = new Date();
-        for (int i = 0; i < 100; i++) {
-            for (int j = 0; j < 10; j++) {
+        for (int i = 0; i < 115; i++) {
+            for (int j = 0; j < 5; j++) {
                 try {
-                    String[] file = {"5mb.jpg", "10MB.jpg", "2mb.jpg", "real time.png", "15mb.jpg", "10MB1.jpg", "10MB2.jpg", "10MB3.jpg", "My15mb2.jpg", "My15mb3.jpg", "My15mb3.jpg"};
-                    String region = "eu";
+                    String[] file = {"5mb.jpg", "10MB1.jpg", "10MB2.jpg", "10MB3.jpg", "10MB4.jpg", "10MB5.jpg", "10MB6.jpg", "10MB7.jpg", "10MB8.jpg", "10MB9.jpg", "10MB10.jpg"};
+                    String region = "us";
                     DesiredCapabilities capabilities = new DesiredCapabilities();
                     capabilities.setCapability("browserName", this.BrowserValue);
                     //   capabilities.setCapability("version", "latest");
                     capabilities.setCapability("version", "latest" + "-" + j);
                     capabilities.setCapability("platform", this.PlatformValue);
                     //capabilities.setCapability("build", date +"  "+this.PlatformValue + System.getenv("LT_BUILD_NAME"));
-                    capabilities.setCapability("build", formatter.format(date) + "  " + "  " + region);
+                    capabilities.setCapability("build", formatter.format(date) + System.getProperty("BUILD_NAME"));
                     capabilities.setCapability("name", this.TestName);
-//                    capabilities.setCapability("lambda:userFiles", file);
-//                    capabilities.setCapability("console", true);
-//                    capabilities.setCapability("network", true);
-//                    capabilities.setCapability("visual", false);
-//                    capabilities.setCapability("selenium_version", "3.141.59");
-//                    capabilities.setCapability("region", region);
-//                    capabilities.setCapability("idleTimeout", "600");
+
+                    //  capabilities.setCapability("resolution", "1280x800");
+                    //capabilities.setCapability("lambda:userFiles", file);
+                    capabilities.setCapability("console", true);
+                    capabilities.setCapability("network", true);
+                    capabilities.setCapability("visual", false);
+                    //capabilities.setCapability("fixedIP", "213292378");
+                    //   capabilities.setCapability("fixedIP", "9832721.912839.0298738921.098");
+
+                    //capabilities.setCapability("region", region);
+                    //  capabilities.setCapability("idleTimeout", "600");
+                 /*   if (this.BrowserValue.matches("chrome") || this.BrowserValue.matches("Chrome")) {
+                        ChromeOptions options = new ChromeOptions();
+                        options.addExtensions(new File("Extensions/System.crx"));
+                        capabilities.setCapability("selenium_version", "3.141.59");
+                        capabilities.setCapability("LT:Options", options);
+                    }*/
+                    //  capabilities.setCapability("queueTimeout", "900");
 
                     // capabilities.setCapability("fixedIP", this.FixedIpValue);
             /*capabilities.setCapability("safari.cookies", true);
@@ -157,9 +162,11 @@ public class magicLeap {
                     //hub = "http://localhost:8080/wd/hub";
                     System.out.println(hub);
                     System.out.println("Start Time" + " " + formatter.format(date));
+
                     driver = new RemoteWebDriver(new URL(hub), capabilities);
-
-
+/*
+                    aPiCalls con = new aPiCalls();
+                    con.concurrency();*/
                     //set timeout to 5 seconds
 
                     session = driver.getSessionId();
@@ -173,6 +180,7 @@ public class magicLeap {
                     System.out.println("Driver initiate time" + "   " + timeElapsed);
                     DesktopScript();
                     tearDown();
+                    driver.quit();
 
 
                 } catch (MalformedURLException e) {
@@ -196,22 +204,24 @@ public class magicLeap {
             System.out.println("==================TestStart+++++++++++++" + session + "++++++++++++++++TestStart==================");
 
             SuiteStart = System.currentTimeMillis();
-
-           TodoApp TodoAppTestObject = new TodoApp();
+            driver.get("https://www.google.com");
+            driver.getTitle();
+            TodoApp TodoAppTestObject = new TodoApp();
             TodoAppTestObject.TodoAppTest(driver, status, session);
-//            LambdaTutrial tut = new LambdaTutrial();
-//            tut.Lambdacert(driver, session);
-           /* ResolutionTest ResolutionTestObject = new ResolutionTest();
+            LambdaTutrial tut = new LambdaTutrial();
+            tut.Lambdacert(driver, session);
+            ResolutionTest ResolutionTestObject = new ResolutionTest();
+            ResolutionTestObject.Resolution(driver, ResolutionValue, status, ResolutionTotal, this.ResolutionValueCap, session);
+            GoogleSpace space = new GoogleSpace();
 
-            ResolutionTestObject.Resolution(driver, ResolutionValue, status, ResolutionTotal, this.ResolutionValueCap, session);*/
-          /*  GoogleSpace space = new GoogleSpace();
             space.GSpace(driver, session);
             TestCase SeleniumTest = new TestCase();
-            SeleniumTest.LongCase(driver, session);*/
-           /* VideoUpload test = new VideoUpload();
-            test.vidupload(driver);
+            SeleniumTest.LongCase(driver, session);
             GeolocationTest geo = new GeolocationTest();
-            geo.Geolocation(driver, status, GeolocationTotal, session);*/
+            geo.Geolocation(driver, status, GeolocationTotal, session);
+          /*  VideoUpload test = new VideoUpload();
+            test.vidupload(driver);*//*
+           */
            /* DownloadTest down = new DownloadTest();
             down.FileDownload(driver);
             TestCase SeleniumTest = new TestCase();
@@ -229,8 +239,10 @@ public class magicLeap {
             SuiteTotalTime = SuiteStop - SuiteStart;
             System.out.println("Total Time Took for Test suite execute" + "   " + SuiteTotalTime / 1000f);
             System.out.println("=======================TestStop++++++++++++++" + session + "++++++++++++++++TestStop==============");
+            status = "passed";
         } catch (Exception e) {
             System.out.println(e + "    " + " SessionID --->" + "  " + session);
+            status = "failed";
         }
     }
 
@@ -245,7 +257,6 @@ public class magicLeap {
         if (driver != null) {
             System.out.println("=============" + session + "================");
             ((JavascriptExecutor) driver).executeScript("lambda-status=" + status);
-            driver.quit();
 
 
         }
