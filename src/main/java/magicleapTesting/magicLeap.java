@@ -204,21 +204,26 @@ public class magicLeap {
             System.out.println("==================TestStart+++++++++++++" + session + "++++++++++++++++TestStart==================");
 
             SuiteStart = System.currentTimeMillis();
-            driver.get("https://www.google.com");
-            driver.getTitle();
-            TodoApp TodoAppTestObject = new TodoApp();
-            TodoAppTestObject.TodoAppTest(driver, status, session);
-            LambdaTutrial tut = new LambdaTutrial();
-            tut.Lambdacert(driver, session);
-            ResolutionTest ResolutionTestObject = new ResolutionTest();
-            ResolutionTestObject.Resolution(driver, ResolutionValue, status, ResolutionTotal, this.ResolutionValueCap, session);
-            GoogleSpace space = new GoogleSpace();
-
-            space.GSpace(driver, session);
-            TestCase SeleniumTest = new TestCase();
-            SeleniumTest.LongCase(driver, session);
-            GeolocationTest geo = new GeolocationTest();
-            geo.Geolocation(driver, status, GeolocationTotal, session);
+            driver.get("https://www.amazon.in/");
+            System.out.println(driver.getTitle());
+            for (int index  = 0; index<=50; index++) {
+                Thread.sleep(1000);
+            }
+            driver.get("https://www.amazon.in/");
+            System.out.println(driver.getTitle());
+//            TodoApp TodoAppTestObject = new TodoApp();
+//            TodoAppTestObject.TodoAppTest(driver, status, session);
+//            LambdaTutrial tut = new LambdaTutrial();
+//            tut.Lambdacert(driver, session);
+//            ResolutionTest ResolutionTestObject = new ResolutionTest();
+//            ResolutionTestObject.Resolution(driver, ResolutionValue, status, ResolutionTotal, this.ResolutionValueCap, session);
+//            GoogleSpace space = new GoogleSpace();
+//
+//            space.GSpace(driver, session);
+//            TestCase SeleniumTest = new TestCase();
+//            SeleniumTest.LongCase(driver, session);
+//            GeolocationTest geo = new GeolocationTest();
+//            geo.Geolocation(driver, status, GeolocationTotal, session);
           /*  VideoUpload test = new VideoUpload();
             test.vidupload(driver);*//*
            */
@@ -232,9 +237,9 @@ public class magicLeap {
             /*
             DesignPlane plane = new DesignPlane();
             plane.plane(driver,session);*/
-//            for (int index  = 0; index<=20; index++) {
-//                Thread.sleep(1000);
-//            }
+            for (int index  = 0; index<=20; index++) {
+                Thread.sleep(1000);
+            }
             SuiteStop = System.currentTimeMillis();
             SuiteTotalTime = SuiteStop - SuiteStart;
             System.out.println("Total Time Took for Test suite execute" + "   " + SuiteTotalTime / 1000f);
