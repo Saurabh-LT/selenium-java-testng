@@ -18,8 +18,8 @@ import java.util.TimeZone;
 
 public class magicLeap {
 
-    public String username = "prateeks";
-    public String accesskey = "c5nvx3MGUzs8Lzv8NZVKbNiOeQaElnMtDp3nZEbwwhKc9NV8Qd";
+    public String username = "XEAWCVZI";
+    public String accesskey = "O0DJ5u81mYncv1xPNFIlNBrbjrnzjeGiDvqWPKBrsRmwJ0J2LL";
     public RemoteWebDriver driver;
     public String gridURL = "preprod-hub.lambdatest.com"; //hub-virginia.lambdatest.com/wd/hub"@eu-central-1-hub.lambdatest.com/wd/hub";https://dark-1-hub.lambdatest.com/wd/hub/status
     //https://dark-2-hub.lambdatest.com/wd/hub/status
@@ -98,13 +98,13 @@ public class magicLeap {
                     //capabilities.setCapability("build", date +"  "+this.PlatformValue + System.getenv("LT_BUILD_NAME"));
                     capabilities.setCapability("build", formatter.format(date) + "  " + "  " + region);
                     capabilities.setCapability("name", this.TestName);
-                    capabilities.setCapability("lambda:userFiles", file);
-                    capabilities.setCapability("console", true);
-                    capabilities.setCapability("network", true);
-                    capabilities.setCapability("visual", false);
-                    capabilities.setCapability("selenium_version", "3.141.59");
-                    capabilities.setCapability("region", region);
-                    capabilities.setCapability("idleTimeout", "600");
+//                    capabilities.setCapability("lambda:userFiles", file);
+//                    capabilities.setCapability("console", true);
+//                    capabilities.setCapability("network", true);
+//                    capabilities.setCapability("visual", false);
+//                    capabilities.setCapability("selenium_version", "3.141.59");
+//                    capabilities.setCapability("region", region);
+//                    capabilities.setCapability("idleTimeout", "600");
 
                     // capabilities.setCapability("fixedIP", this.FixedIpValue);
             /*capabilities.setCapability("safari.cookies", true);
@@ -197,10 +197,10 @@ public class magicLeap {
 
             SuiteStart = System.currentTimeMillis();
 
-           /* TodoApp TodoAppTestObject = new TodoApp();
-            TodoAppTestObject.TodoAppTest(driver, status, session);*/
-            LambdaTutrial tut = new LambdaTutrial();
-            tut.Lambdacert(driver, session);
+           TodoApp TodoAppTestObject = new TodoApp();
+            TodoAppTestObject.TodoAppTest(driver, status, session);
+//            LambdaTutrial tut = new LambdaTutrial();
+//            tut.Lambdacert(driver, session);
            /* ResolutionTest ResolutionTestObject = new ResolutionTest();
 
             ResolutionTestObject.Resolution(driver, ResolutionValue, status, ResolutionTotal, this.ResolutionValueCap, session);*/
@@ -222,11 +222,13 @@ public class magicLeap {
             /*
             DesignPlane plane = new DesignPlane();
             plane.plane(driver,session);*/
+            for (int index  = 0; index<=100; index++) {
+                Thread.sleep(1000);
+            }
             SuiteStop = System.currentTimeMillis();
             SuiteTotalTime = SuiteStop - SuiteStart;
             System.out.println("Total Time Took for Test suite execute" + "   " + SuiteTotalTime / 1000f);
             System.out.println("=======================TestStop++++++++++++++" + session + "++++++++++++++++TestStop==============");
-
         } catch (Exception e) {
             System.out.println(e + "    " + " SessionID --->" + "  " + session);
         }

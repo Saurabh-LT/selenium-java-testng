@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="10" name="DesktopBrowsers" parallel="tests">
+
+    <test name="1">
+        <parameter name="browser" value="Chrome"/>
+        <parameter name="version" value="latest"/>
+        <parameter name="platform" value="win8.1"/>
+        <parameter name="fixedIp" value="10.82.4.230"/>
+        <parameter name="resolution" value="1920x1080"/>
+        <parameter name="timezone" value="UTC+04:00"/>
+        <parameter name="geoLocation" value="IN"/>
+        <parameter name="tunnelName" value="prateekSignh"/>
+        <parameter name="tunnel" value="false"/>
+        <classes>
+            <class name="magicleapTesting.magicLeap"/>
+
+        </classes>
+    </test>
+
+
+    <test name="2">
+        <parameter name="browser" value="Firefox"/>
+        <parameter name="version" value="11.0"/>
+        <parameter name="platform" value="win8.1"/>
+        <parameter name="fixedIp" value="10.82.4.231"/>
+        <parameter name="resolution" value="1920x1080"/>
+        <parameter name="timezone" value="UTC+04:00"/>
+        <parameter name="geoLocation" value="RO"/>
+        <parameter name="tunnelName" value="prateekSingh"/>
+        <parameter name="tunnel" value="false"/>
+        <classes>
+            <class name="magicleapTesting.magicLeap"/>
+
+        </classes>
+    </test>
+
+    <test name="3">
+        <parameter name="browser" value="MicrosoftEdge"/>
+        <parameter name="version" value="latest"/>
+        <parameter name="platform" value="win8"/>
+        <parameter name="fixedIp" value="10.5.0.34"/>
+        <parameter name="resolution" value="1280x1024"/>
+        <parameter name="timezone" value="UTC+04:00"/>
+        <parameter name="geoLocation" value="SE"/>
+        <parameter name="tunnelName" value="prateekSingh"/>
+        <parameter name="tunnel" value="false"/>
+        <classes>
+            <class name="magicleapTesting.magicLeap"/>
+        </classes>
+    </test>
+
+    <test name="4">
+        <parameter name="browser" value="MicrosoftEdge"/>
+        <parameter name="version" value="latest"/>
+        <parameter name="platform" value="win8.1"/>
+        <parameter name="fixedIp" value="10.82.4.234"/>
+        <parameter name="resolution" value="1920x1080"/>
+        <parameter name="timezone" value="UTC+04:00"/>
+        <parameter name="geoLocation" value="RO"/>
+        <parameter name="tunnelName" value="prateekSingh"/>
+        <parameter name="tunnel" value="false"/>
+
+        <classes>
+            <class name="magicleapTesting.magicLeap"/>
+        </classes>
+    </test>
+
+    <test name="5">
+        <parameter name="browser" value="Chrome"/>
+        <parameter name="version" value="11.0"/>
+        <parameter name="platform" value="win7"/>
+        <parameter name="fixedIp" value="10.82.6.201"/>
+        <parameter name="resolution" value="1440x900"/>
+        <parameter name="timezone" value="UTC+04:00"/>
+        <parameter name="geoLocation" value="HN"/>
+        <parameter name="tunnelName" value="prateekSingh"/>
+        <parameter name="tunnel" value="false"/>
+
+        <classes>
+            <class name="magicleapTesting.magicLeap"/>
+        </classes>
+    </test>
+
+    <test name="6">
+        <parameter name="browser" value="Firefox"/>
+        <parameter name="version" value="74.0"/>
+        <parameter name="platform" value="win7"/>
+        <parameter name="fixedIp" value="10.82.6.203"/>
+        <parameter name="resolution" value="1440x900"/>
+        <parameter name="timezone" value="UTC+04:00"/>
+        <parameter name="geoLocation" value="NI"/>
+        <parameter name="tunnelName" value="prateekSingh"/>
+        <parameter name="tunnel" value="false"/>
+
+        <classes>
+            <class name="magicleapTesting.magicLeap"/>
+        </classes>
+    </test>
+
+
+    <test name="7">
+        <parameter name="browser" value="MicrosoftEdge"/>
+        <parameter name="version" value="72.0"/>
+        <parameter name="platform" value="win7"/>
+        <parameter name="fixedIp" value="10.82.6.205"/>
+        <parameter name="resolution" value="1280x1024"/>
+        <parameter name="timezone" value="UTC+04:00"/>
+        <parameter name="geoLocation" value="MA"/>
+        <parameter name="tunnelName" value="prateekSingh"/>
+        <parameter name="tunnel" value="false"/>
+        <classes>
+            <class name="magicleapTesting.magicLeap"/>
+        </classes>
+    </test>
+
+
+    <test name="8">
+        <parameter name="browser" value="Chrome"/>
+        <parameter name="version" value="11.0"/>
+        <parameter name="platform" value="macos big sur"/>
+        <parameter name="fixedIp" value="10.243.32.235"/>
+        <parameter name="resolution" value="1600x1200"/>
+        <parameter name="timezone" value="UTC+04:00"/>
+        <parameter name="geoLocation" value="MY"/>
+        <parameter name="tunnelName" value="prateekSingh"/>
+        <parameter name="tunnel" value="false"/>
+        <classes>
+            <class name="magicleapTesting.magicLeap"/>
+        </classes>
+    </test>
+
+    <test name="9">
+        <parameter name="browser" value="Firefox"/>
+        <parameter name="version" value="71.0"/>
+        <parameter name="platform" value="macos big sur"/>
+        <parameter name="fixedIp" value="10.243.32.236"/>
+        <parameter name="resolution" value="1440x900"/>
+        <parameter name="timezone" value="UTC+04:00"/>
+        <parameter name="geoLocation" value="NZ"/>
+        <parameter name="tunnelName" value="prateekSingh"/>
+        <parameter name="tunnel" value="false"/>
+        <classes>
+            <class name="magicleapTesting.magicLeap"/>
+        </classes>
+    </test>
+
+
+    <test name="10">
+        <parameter name="browser" value="Chrome"/>
+        <parameter name="version" value="65.0"/>
+        <parameter name="platform" value="macos big sur"/>
+        <parameter name="fixedIp" value="10.243.32.64"/>
+        <parameter name="resolution" value="1600x1200"/>
+        <parameter name="timezone" value="UTC+04:00"/>
+        <parameter name="geoLocation" value="RU"/>
+        <parameter name="tunnelName" value="prateekSingh"/>
+        <parameter name="tunnel" value="false"/>
+        <classes>
+            <class name="magicleapTesting.magicLeap"/>
+        </classes>
+    </test>
+</suite>
