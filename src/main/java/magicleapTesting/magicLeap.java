@@ -232,7 +232,7 @@ public class magicLeap {
             /*
             DesignPlane plane = new DesignPlane();
             plane.plane(driver,session);*/
-            for (int index  = 0; index<=100; index++) {
+            for (int index  = 0; index<=50; index++) {
                 Thread.sleep(1000);
             }
             SuiteStop = System.currentTimeMillis();
