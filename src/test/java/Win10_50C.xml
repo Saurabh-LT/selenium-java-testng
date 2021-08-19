@@ -73,7 +73,7 @@
     <test name="5">
         <parameter name="browser" value="Chrome"/>
         <parameter name="version" value="11.0"/>
-        <parameter name="platform" value="win7"/>
+        <parameter name="platform" value="win10"/>
         <parameter name="fixedIp" value="10.82.6.201"/>
         <parameter name="resolution" value="1440x900"/>
         <parameter name="timezone" value="UTC+04:00"/>
@@ -89,7 +89,7 @@
     <test name="6">
         <parameter name="browser" value="Firefox"/>
         <parameter name="version" value="74.0"/>
-        <parameter name="platform" value="win7"/>
+        <parameter name="platform" value="win10"/>
         <parameter name="fixedIp" value="10.82.6.203"/>
         <parameter name="resolution" value="1440x900"/>
         <parameter name="timezone" value="UTC+04:00"/>
@@ -106,7 +106,7 @@
     <test name="7">
         <parameter name="browser" value="MicrosoftEdge"/>
         <parameter name="version" value="72.0"/>
-        <parameter name="platform" value="win7"/>
+        <parameter name="platform" value="win10"/>
         <parameter name="fixedIp" value="10.82.6.205"/>
         <parameter name="resolution" value="1280x1024"/>
         <parameter name="timezone" value="UTC+04:00"/>
@@ -122,7 +122,7 @@
     <test name="8">
         <parameter name="browser" value="Chrome"/>
         <parameter name="version" value="11.0"/>
-        <parameter name="platform" value="macos big sur"/>
+        <parameter name="platform" value="win10"/>
         <parameter name="fixedIp" value="10.243.32.235"/>
         <parameter name="resolution" value="1600x1200"/>
         <parameter name="timezone" value="UTC+04:00"/>
@@ -137,7 +137,7 @@
     <test name="9">
         <parameter name="browser" value="Firefox"/>
         <parameter name="version" value="71.0"/>
-        <parameter name="platform" value="macos big sur"/>
+        <parameter name="platform" value="win10"/>
         <parameter name="fixedIp" value="10.243.32.236"/>
         <parameter name="resolution" value="1440x900"/>
         <parameter name="timezone" value="UTC+04:00"/>
@@ -153,7 +153,7 @@
     <test name="10">
         <parameter name="browser" value="Chrome"/>
         <parameter name="version" value="65.0"/>
-        <parameter name="platform" value="macos big sur"/>
+        <parameter name="platform" value="win10"/>
         <parameter name="fixedIp" value="10.243.32.64"/>
         <parameter name="resolution" value="1600x1200"/>
         <parameter name="timezone" value="UTC+04:00"/>
@@ -168,7 +168,7 @@
     <test name="11">
         <parameter name="browser" value="safari"/>
         <parameter name="version" value="65.0"/>
-        <parameter name="platform" value="macos big sur"/>
+        <parameter name="platform" value="win10"/>
         <parameter name="fixedIp" value="10.243.32.62"/>
         <parameter name="resolution" value="2048x1536"/>
         <parameter name="timezone" value="UTC+04:00"/>
@@ -184,7 +184,7 @@
     <test name="12">
         <parameter name="browser" value="MicrosoftEdge"/>
         <parameter name="version" value="70.0"/>
-        <parameter name="platform" value="macos big sur"/>
+        <parameter name="platform" value="win10"/>
         <parameter name="fixedIp" value="10.243.32.60"/>
         <parameter name="resolution" value="1280x960"/>
         <parameter name="timezone" value="UTC+04:00"/>
@@ -199,7 +199,7 @@
     <test name="13">
         <parameter name="browser" value="safari"/>
         <parameter name="version" value="78.0"/>
-        <parameter name="platform" value="macos big sur"/>
+        <parameter name="platform" value="win10"/>
         <parameter name="fixedIp" value="10.243.32.238"/>
         <parameter name="resolution" value="1600x1200"/>
         <parameter name="timezone" value="UTC+04:00"/>
@@ -312,7 +312,7 @@
     <test name="20">
         <parameter name="browser" value="MicrosoftEdge"/>
         <parameter name="version" value="90.0"/>
-        <parameter name="platform" value="win7"/>
+        <parameter name="platform" value="win10"/>
         <parameter name="fixedIp" value="10.80.102.100"/>
         <parameter name="resolution" value="1280x1024"/>
         <parameter name="timezone" value="UTC+04:00"/>
@@ -419,7 +419,7 @@
     <test name="27">
         <parameter name="browser" value="MicrosoftEdge"/>
         <parameter name="version" value="latest"/>
-        <parameter name="platform" value="macos big sur"/>
+        <parameter name="platform" value="win10"/>
         <parameter name="fixedIp" value="10.81.100.114"/>
         <parameter name="resolution" value="1280x960"/>
         <parameter name="timezone" value="UTC+04:00"/>
@@ -434,7 +434,7 @@
     <test name="28">
         <parameter name="browser" value="MicrosoftEdge"/>
         <parameter name="version" value="latest"/>
-        <parameter name="platform" value="macos catalina"/>
+        <parameter name="platform" value="win10"/>
         <parameter name="fixedIp" value="10.81.100.114"/>
         <parameter name="resolution" value="1680x1050"/>
         <parameter name="timezone" value="UTC+04:00"/>
