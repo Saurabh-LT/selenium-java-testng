@@ -1,0 +1,162 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1000" name="DesktopBrowsers" parallel="tests">
+
+    <test name = "1" >
+        <parameter name="browser" value="Chrome"/>
+        <parameter name="version" value="91.0"/>
+        <parameter name= "platform" value="macos mojave"/>
+        <parameter name= "fixedIp" value="10.82.4.230"/>
+        <parameter name= "resolution" value="1920x1080"/>
+        <parameter name= "timezone" value="UTC+04:00"/>
+        <parameter name= "geoLocation" value="IN"/>
+        <parameter name= "tunnelName" value="prateekSignh"/>
+        <parameter name= "tunnel" value="false"/>
+        <classes>
+            <class name="magicleapTesting.magicLeap"/>
+        </classes>
+    </test> <!-- Test -->
+
+
+    <test name = "2" >
+        <parameter name="browser" value="Chrome"/>
+        <parameter name="version" value="91.0"/>
+        <parameter name= "platform" value="macos mojave"/>
+        <parameter name= "fixedIp" value="10.82.4.230"/>
+        <parameter name= "resolution" value="1920x1080"/>
+        <parameter name= "timezone" value="UTC+04:00"/>
+        <parameter name= "geoLocation" value="IN"/>
+        <parameter name= "tunnelName" value="prateekSignh"/>
+        <parameter name= "tunnel" value="false"/>
+        <classes>
+            <class name="magicleapTesting.magicLeap"/>
+        </classes>
+    </test> <!-- Test -->
+
+
+    <test name = "3" >
+        <parameter name="browser" value="Chrome"/>
+        <parameter name="version" value="91.0"/>
+        <parameter name= "platform" value="macos mojave"/>
+        <parameter name= "fixedIp" value="10.82.4.230"/>
+        <parameter name= "resolution" value="1920x1080"/>
+        <parameter name= "timezone" value="UTC+04:00"/>
+        <parameter name= "geoLocation" value="IN"/>
+        <parameter name= "tunnelName" value="prateekSignh"/>
+        <parameter name= "tunnel" value="false"/>
+        <classes>
+            <class name="magicleapTesting.magicLeap"/>
+        </classes>
+    </test> <!-- Test -->
+
+
+    <test name = "4" >
+        <parameter name="browser" value="Chrome"/>
+        <parameter name="version" value="91.0"/>
+        <parameter name= "platform" value="macos mojave"/>
+        <parameter name= "fixedIp" value="10.82.4.230"/>
+        <parameter name= "resolution" value="1920x1080"/>
+        <parameter name= "timezone" value="UTC+04:00"/>
+        <parameter name= "geoLocation" value="IN"/>
+        <parameter name= "tunnelName" value="prateekSignh"/>
+        <parameter name= "tunnel" value="false"/>
+        <classes>
+            <class name="magicleapTesting.magicLeap"/>
+        </classes>
+    </test> <!-- Test -->
+
+
+    <test name = "5" >
+        <parameter name="browser" value="Chrome"/>
+        <parameter name="version" value="91.0"/>
+        <parameter name= "platform" value="macos mojave"/>
+        <parameter name= "fixedIp" value="10.82.4.230"/>
+        <parameter name= "resolution" value="1920x1080"/>
+        <parameter name= "timezone" value="UTC+04:00"/>
+        <parameter name= "geoLocation" value="IN"/>
+        <parameter name= "tunnelName" value="prateekSignh"/>
+        <parameter name= "tunnel" value="false"/>
+        <classes>
+            <class name="magicleapTesting.magicLeap"/>
+        </classes>
+    </test> <!-- Test -->
+
+
+    <test name = "6" >
+        <parameter name="browser" value="Chrome"/>
+        <parameter name="version" value="91.0"/>
+        <parameter name= "platform" value="macos mojave"/>
+        <parameter name= "fixedIp" value="10.82.4.230"/>
+        <parameter name= "resolution" value="1920x1080"/>
+        <parameter name= "timezone" value="UTC+04:00"/>
+        <parameter name= "geoLocation" value="IN"/>
+        <parameter name= "tunnelName" value="prateekSignh"/>
+        <parameter name= "tunnel" value="false"/>
+        <classes>
+            <class name="magicleapTesting.magicLeap"/>
+        </classes>
+    </test> <!-- Test -->
+
+
+    <test name = "7" >
+        <parameter name="browser" value="Chrome"/>
+        <parameter name="version" value="91.0"/>
+        <parameter name= "platform" value="macos mojave"/>
+        <parameter name= "fixedIp" value="10.82.4.230"/>
+        <parameter name= "resolution" value="1920x1080"/>
+        <parameter name= "timezone" value="UTC+04:00"/>
+        <parameter name= "geoLocation" value="IN"/>
+        <parameter name= "tunnelName" value="prateekSignh"/>
+        <parameter name= "tunnel" value="false"/>
+        <classes>
+            <class name="magicleapTesting.magicLeap"/>
+        </classes>
+    </test> <!-- Test -->
+
+
+    <test name = "8" >
+        <parameter name="browser" value="Chrome"/>
+        <parameter name="version" value="91.0"/>
+        <parameter name= "platform" value="macos mojave"/>
+        <parameter name= "fixedIp" value="10.82.4.230"/>
+        <parameter name= "resolution" value="1920x1080"/>
+        <parameter name= "timezone" value="UTC+04:00"/>
+        <parameter name= "geoLocation" value="IN"/>
+        <parameter name= "tunnelName" value="prateekSignh"/>
+        <parameter name= "tunnel" value="false"/>
+        <classes>
+            <class name="magicleapTesting.magicLeap"/>
+        </classes>
+    </test> <!-- Test -->
+
+
+    <test name = "9" >
+        <parameter name="browser" value="Chrome"/>
+        <parameter name="version" value="91.0"/>
+        <parameter name= "platform" value="macos mojave"/>
+        <parameter name= "fixedIp" value="10.82.4.230"/>
+        <parameter name= "resolution" value="1920x1080"/>
+        <parameter name= "timezone" value="UTC+04:00"/>
+        <parameter name= "geoLocation" value="IN"/>
+        <parameter name= "tunnelName" value="prateekSignh"/>
+        <parameter name= "tunnel" value="false"/>
+        <classes>
+            <class name="magicleapTesting.magicLeap"/>
+        </classes>
+    </test> <!-- Test -->
+
+
+    <test name = "10" >
+        <parameter name="browser" value="Chrome"/>
+        <parameter name="version" value="91.0"/>
+        <parameter name= "platform" value="macos mojave"/>
+        <parameter name= "fixedIp" value="10.82.4.230"/>
+        <parameter name= "resolution" value="1920x1080"/>
+        <parameter name= "timezone" value="UTC+04:00"/>
+        <parameter name= "geoLocation" value="IN"/>
+        <parameter name= "tunnelName" value="prateekSignh"/>
+        <parameter name= "tunnel" value="false"/>
+        <classes>
+            <class name="magicleapTesting.magicLeap"/>
+        </classes>
+    </test> <!-- Test -->
+</suite>
