@@ -220,28 +220,28 @@ public class MacTest {
       SuiteStart = System.currentTimeMillis();
       driver.get("https://www.amazon.in/");
       System.out.println(driver.getTitle());
-      for (int index  = 0; index<=50; index++) {
+      for (int index  = 0; index<=25; index++) {
         Thread.sleep(1000);
       }
       driver.get("https://www.amazon.in/");
       System.out.println(driver.getTitle());
-      String URL = "https://www.lambdatest.com/";
-      driver.navigate().to(URL);
-      watForVisibility(By.xpath("//a[@href='https://accounts.lambdatest.com/login']"), 20, driver);
-      watForClickAble(By.xpath("//a[@href='https://accounts.lambdatest.com/login']"), 20, driver);
-      driver.findElement(By.xpath("//a[@href='https://accounts.lambdatest.com/login']")).click();
-      watForVisibility(By.xpath("//h1"),20, driver);
-      Assert.assertTrue(driver.findElement(By.xpath("//h1")).isDisplayed());
-      watForVisibility(By.name("email"), 20, driver);
-      watForClickAble(By.name("email"), 20, driver);
-      driver.findElement(By.name("email")).sendKeys("saurabh@lambdatest.com");
-      watForClickAble(By.name("password"), 20, driver);
-      driver.findElement(By.name("password")).sendKeys("1234567890");
-      driver.get(URL);
-
-      driver.get("https://www.myntra.com/");
-      watForVisibility(By.className("desktop-searchBar"), 20, driver);
-      driver.findElement(By.className("desktop-searchBar")).sendKeys("");
+//      String URL = "https://www.lambdatest.com/";
+//      driver.navigate().to(URL);
+//      watForVisibility(By.xpath("//a[@href='https://accounts.lambdatest.com/login']"), 20, driver);
+//      watForClickAble(By.xpath("//a[@href='https://accounts.lambdatest.com/login']"), 20, driver);
+//      driver.findElement(By.xpath("//a[@href='https://accounts.lambdatest.com/login']")).click();
+//      watForVisibility(By.xpath("//h1"),20, driver);
+//      Assert.assertTrue(driver.findElement(By.xpath("//h1")).isDisplayed());
+//      watForVisibility(By.name("email"), 20, driver);
+//      watForClickAble(By.name("email"), 20, driver);
+//      driver.findElement(By.name("email")).sendKeys("saurabh@lambdatest.com");
+//      watForClickAble(By.name("password"), 20, driver);
+//      driver.findElement(By.name("password")).sendKeys("1234567890");
+//      driver.get(URL);
+//
+//      driver.get("https://www.myntra.com/");
+//      watForVisibility(By.className("desktop-searchBar"), 20, driver);
+//      driver.findElement(By.className("desktop-searchBar")).sendKeys("");
 
 
       //            TodoApp TodoAppTestObject = new TodoApp();
