@@ -1,10 +1,14 @@
 package magicleapTesting;
 
 import org.apache.commons.lang3.time.StopWatch;
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.remote.SessionId;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -23,7 +27,7 @@ public class magicLeap {
     public String username = System.getProperty("LT_USERNAME");
     public String accesskey = System.getProperty("LT_ACCESS_KEY");
     public RemoteWebDriver driver;
-    public String gridURL = "preprod-hub.lambdatest.com"; //hub-virginia.lambdatest.com/wd/hub"@eu-central-1-hub.lambdatest.com/wd/hub";https://dark-1-hub.lambdatest.com/wd/hub/status
+    public String gridURL = "hub.lambdatest.com"; //hub-virginia.lambdatest.com/wd/hub"@eu-central-1-hub.lambdatest.com/wd/hub";https://dark-1-hub.lambdatest.com/wd/hub/status
     //https://dark-2-hub.lambdatest.com/wd/hub/status
     String status;
     String ResolutionValue;
@@ -200,11 +204,20 @@ public class magicLeap {
 
     }
 
+    public void watForVisibility(By locator, int timeOutInSeconds, RemoteWebDriver remoteWebDriver) {
+        WebDriverWait webDriverWait = new WebDriverWait(remoteWebDriver, timeOutInSeconds);
+        webDriverWait.until(ExpectedConditions.invisibilityOfElementLocated(locator));
+    }
+
+    public void watForClickAble(By locator, int timeOutInSeconds, RemoteWebDriver remoteWebDriver) {
+        WebDriverWait webDriverWait = new WebDriverWait(remoteWebDriver, timeOutInSeconds);
+        webDriverWait.until(ExpectedConditions.elementToBeClickable(locator));
+    }
+
     @Test
     public void DesktopScript() {
         try {
             System.out.println("==================TestStart+++++++++++++" + session + "++++++++++++++++TestStart==================");
-
             SuiteStart = System.currentTimeMillis();
             driver.get("https://www.amazon.in/");
             System.out.println(driver.getTitle());
@@ -213,6 +226,25 @@ public class magicLeap {
             }
             driver.get("https://www.amazon.in/");
             System.out.println(driver.getTitle());
+//            String URL = "https://www.lambdatest.com/";
+//            driver.navigate().to(URL);
+//            watForVisibility(By.xpath("//a[@href='https://accounts.lambdatest.com/login']"), 20, driver);
+//            watForClickAble(By.xpath("//a[@href='https://accounts.lambdatest.com/login']"), 20, driver);
+//            driver.findElement(By.xpath("//a[@href='https://accounts.lambdatest.com/login']")).click();
+//            watForVisibility(By.xpath("//h1"),20, driver);
+//            Assert.assertTrue(driver.findElement(By.xpath("//h1")).isDisplayed());
+//            watForVisibility(By.name("email"), 20, driver);
+//            watForClickAble(By.name("email"), 20, driver);
+//            driver.findElement(By.name("email")).sendKeys("saurabh@lambdatest.com");
+//            watForClickAble(By.name("password"), 20, driver);
+//            driver.findElement(By.name("password")).sendKeys("1234567890");
+//            driver.get(URL);
+//
+//            driver.get("https://www.myntra.com/");
+//            watForVisibility(By.className("desktop-searchBar"), 20, driver);
+//            driver.findElement(By.className("desktop-searchBar")).sendKeys("");
+
+
 //            TodoApp TodoAppTestObject = new TodoApp();
 //            TodoAppTestObject.TodoAppTest(driver, status, session);
 //            LambdaTutrial tut = new LambdaTutrial();
